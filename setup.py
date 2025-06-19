@@ -20,7 +20,7 @@ if env_arch_list:
     # Let PyTorch builder to choose device to target for.
     device_capability = ""
 else:
-    device_capability = "9.0" #hardcode here
+    device_capability = (9, 0) #hardcode here
     device_capability = f"{device_capability[0]}{device_capability[1]}"
 
 cwd = Path(os.path.dirname(os.path.abspath(__file__)))
